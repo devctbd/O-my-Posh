@@ -57,7 +57,7 @@ Set-PSReadLineOption -PredictionViewStyle InlineView</code></pre>
 
 <ol>
 <li>
-<h3>Vs code terminla font setup.</h3>
+<h3>Vs code terminal fonts Setup.</h3>
 
 <pre><code>"terminal.integrated.fontFamily": "Cascadia Code NF",</code></pre>
 </li>
