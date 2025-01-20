@@ -40,3 +40,25 @@ Set-PSReadLineOption -EditMode Windows
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -PredictionViewStyle InlineView</code></pre>
+
+<ol>
+  <li>
+  <h2> Font install </h2>
+
+<pre><code>scoop bucket add nerd-fonts</code></pre>
+
+  </li>
+  <li>
+  <h2>Again install the font</h2>
+
+<pre><code>scoop install Cascadia-Code</code></pre>
+  </li>
+ </ol>
+
+<ol>
+<li>
+<h3>Vs code terminla font setup.</h3>
+
+<pre><code>"terminal.integrated.fontFamily": "Cascadia Code NF",</code></pre>
+</li>
+</ol>
