@@ -25,7 +25,7 @@
   </li>
   <li>
     <p>Initialize Oh-My-Posh.</p>
-    <pre><code>oh-my-posh init pwsh --config 'C:\Users\<username>\AppData\Local\Programs\oh-my-posh\themes\marcduiker.omp.json' | Invoke-Expression</code></pre>
+    <pre><code>oh-my-posh init pwsh --config 'C:\Users\<UserName>\AppData\Local\Programs\oh-my-posh\themes\marcduiker.omp.json' | Invoke-Expression</code></pre>
   </li>
 </ol>
 
