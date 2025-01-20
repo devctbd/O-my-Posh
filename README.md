@@ -1,64 +1,42 @@
 <h2>Beautiful Terminal on Windows using Oh-My-Posh</h2>
 
-<img src="https://i.ibb.co.com/7t76qDP/New-Project.png" />
+<img src="https://i.ibb.co/7t76qDP/New-Project.png" />
 
 <p>Terminal is the most important part of the Windows experience. It is the place where you spend most of your time. It is the place where you spend most of your time.</p>
 
-<h2> Open Termianl </h2>
+<h2> Installation </h2>
 
-```
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted
-
-<h3>Installation</h3>
-
-```
-
-winget install JanDeDobbeleer.OhMyPosh -s winget
-
-```
-
-<h3> After installation, type in the terminal</h3>
-
-```
-
-notepad $PROFILE
-
-```
-
-<h3> If this shows profile not found error, type this command</h3>
-
-```
-
-New-Item -Path $PROFILE -Type File -Force
-
-```
-
-<h2> Then re-run this command again:</h2>
-
-```
-
-oh-my-posh init pwsh --config 'C:\Users\< dextop username>\AppData\Local\Programs\oh-my-posh\themes\craver.omp.json' | Invoke-Expression
-
-```
+<ol>
+  <li>
+    <p>Open terminal.</p>
+    <pre><code>Set-ExecutionPolicy -ExecutionPolicy Unrestricted</code></pre>
+  </li>
+  <li>
+    <p>Install <code>Oh-My-Posh</code>.</p>
+    <pre><code>winget install JanDeDobbeleer.OhMyPosh -s winget</code></pre>
+  </li>
+  <li>
+    <p>Edit your PowerShell profile.</p>
+    <pre><code>notepad $PROFILE</code></pre>
+  </li>
+  <li>
+    <p>If the previous step shows a "profile not found" error, run this command.</p>
+    <pre><code>New-Item -Path $PROFILE -Type File -Force</code></pre>
+  </li>
+  <li>
+    <p>Initialize Oh-My-Posh.</p>
+    <pre><code>oh-my-posh init pwsh --config 'C:\Users\< dextop username>\AppData\Local\Programs\oh-my-posh\themes\craver.omp.json' | Invoke-Expression</code></pre>
+  </li>
+</ol>
 
 <h3> For autocomplete, we have to install a module.</h3>
 
-```
-
-Install-Module PSReadLine -Force
-
-```
+<pre><code>Install-Module PSReadLine -Force</code></pre>
 
 <h3>After installation is complete, go to the PowerShell config file again and paste these lines:</h3>
 
-```
-
-Import-Module PSReadLine
+<pre><code>Import-Module PSReadLine
 Set-PSReadLineOption -EditMode Windows
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
-Set-PSReadLineOption -PredictionViewStyle InlineView
-
-```
-
-```
+Set-PSReadLineOption -PredictionViewStyle InlineView</code></pre>
